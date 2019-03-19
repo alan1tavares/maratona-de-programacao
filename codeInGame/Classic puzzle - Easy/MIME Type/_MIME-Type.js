@@ -26,20 +26,15 @@ process.stdin.on('end', () => {
         obj[EXT] = MT;
     }
     for (let i = 0; i < Q; i++) {
-        const FNAME = readline().toLowerCase(); // One file name per line.
 
-        // let match = FNAME.match(/\.([a-z]|[0-9])+/g);
-        let match = FNAME.split('.');
-        match = match.length > 1 ? match[match.length - 1]
-            .toLowerCase() : '';
-            // .slice(1) : '';
+        let ext = readline()
+            .toLowerCase()
+            .split('.');
 
-        const EXT = match;
-        if (obj.hasOwnProperty(EXT)) {
-            console.log(obj[EXT]);
-        } else console.log('UNKNOWN');
+        ext = ext.length > 1 ? ext.slice(-1) : '';
+
+        console.log(ext in obj ? obj[ext] : 'UNKNOWN');
     }
-
 });
 // Write an action using console.log()
 // To debug: console.error('Debug messages...');
