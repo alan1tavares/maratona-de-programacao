@@ -7,13 +7,9 @@ int x = Convert.ToInt32(Console.ReadLine());
 
 int seg = x % 60;
 int min = x / 60;
-int h = 0;
+int h = min / 60;
+min = min % 60;
 
-if ( min > 60 )
-{
-	h = min / 60;
-	min = min % 60;
-}
 
 Console.WriteLine($"{h}:{min}:{seg}");
 

@@ -5,22 +5,22 @@
 
 while (true)
 {
-string input = Console.ReadLine();
-if (input == "*") return;
-string [] words = input.Split(' ');
-char firstLetter = input[0];
+	string input = Console.ReadLine();
+	if (input == "*") return;
+	string [] words = input.Split(' ');
+	char firstLetter = input[0];
 
-string result = "Y";
-foreach(string word in words)
-{
-	if (!((word[0] == Char.ToLower(firstLetter)) || (word[0] == Char.ToUpper(firstLetter))))
-		
+	string result = "Y";
+	foreach(string word in words)
 	{
-		result = "N";
-		break;
+		if (!((word[0] == Char.ToLower(firstLetter)) || (word[0] == Char.ToUpper(firstLetter))))
+			
+		{
+			result = "N";
+			break;
+		}
 	}
-}
-Console.WriteLine(result);
+	Console.WriteLine(result);
 }
 
 
