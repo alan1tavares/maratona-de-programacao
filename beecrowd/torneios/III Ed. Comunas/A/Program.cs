@@ -23,15 +23,12 @@ static int GetQuantidadeDiamantes(string diamantes)
 
     for (int i = 0; i < diamantes.Length; i++)
     {
-        if (diamantes[i] == '<' || diamantes[i] == '>')
+        if (diamantes[i] == '<')
+            minerando.Push('<');
+        else if (minerando.Count > 0 && diamantes[i] == '>')
         {
-            if (minerando.Count > 0 && minerando.Peek() == '<' && diamantes[i] == '>')
-            {
-                minerando.Pop();
-                quantidadeDiamantes++;
-            }
-            else
-                minerando.Push(diamantes[i]);
+            minerando.Pop();
+            quantidadeDiamantes++;
         }
     }
 
