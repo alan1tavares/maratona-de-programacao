@@ -4,16 +4,29 @@
  */
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 Console.ReadLine();
 string[] input = Console.ReadLine().Split(' ');
-HashSet<string> fila = new HashSet<string>(input);
 Console.ReadLine();
-fila.ExceptWith(Console.ReadLine().Split(' '));
-string saida = "";
-foreach (string item in fila)
+string[] filaSaida = Console.ReadLine().Split(' ');
+
+Dictionary<int, int> elementosQueSairam = new Dictionary<int, int>(100000);
+for (int i = 0; i < filaSaida.Length; i++)
 {
-    saida += item + " ";
+    elementosQueSairam.Add(Convert.ToInt32(filaSaida[i]), 1);
 }
-Console.WriteLine(saida.Remove(saida.Length-1));
+
+string saida = "";
+for (int i = 0; i < input.Length; i++)
+{
+    if(!elementosQueSairam.ContainsKey(Convert.ToInt32(input[i])))
+    {
+        saida += input[i];
+        if (i != input.Length - 1)
+            saida += " ";     
+    }
+}
+
+Console.WriteLine(saida);
 
