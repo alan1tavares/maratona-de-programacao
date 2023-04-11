@@ -2,7 +2,8 @@
  * Fila
  * https://www.beecrowd.com.br/judge/pt/problems/view/2460
  */
-    using System.Collections.Generic;
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
