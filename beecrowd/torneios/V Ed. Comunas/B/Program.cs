@@ -12,12 +12,12 @@ int somatorioLinhaAnterior = 1;
 
 for (int i = 0; i < n; i++)
 {
-    string[] linhaMatrix = Console.ReadLine().Split();
+    int[] linhaMatrix = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
     
     int somatorioLinha = 0;
     for (int j = 0; j < m; j++)
     {
-        int elemento = Convert.ToInt32(linhaMatrix[j]);
+        int elemento = linhaMatrix[j];
         somatorioLinha += elemento;
         if (elemento != 0  && j > indiceColunaMaisAEsquerda)
         {
