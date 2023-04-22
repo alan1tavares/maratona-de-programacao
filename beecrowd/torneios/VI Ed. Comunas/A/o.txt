@@ -1,8 +1,3 @@
-/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/Program.cs(28,12): warning CS8618: O campo não anulável '_esquerdo' precisa conter um valor não nulo ao sair do construtor. Considere declarar o campo como anulável. [/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/A.csproj]
-/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/Program.cs(28,12): warning CS8618: O campo não anulável '_direito' precisa conter um valor não nulo ao sair do construtor. Considere declarar o campo como anulável. [/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/A.csproj]
-/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/Program.cs(7,19): warning CS8604: Possível argumento de referência nula para o parâmetro 's' em 'int int.Parse(string s)'. [/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/A.csproj]
-/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/Program.cs(10,16): warning CS8600: Conversão de literal nula ou possível valor nulo em tipo não anulável. [/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/A.csproj]
-/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/Program.cs(11,38): warning CS8602: Desreferência de uma referência possivelmente nula. [/home/alan/Projetos/maratona-de-programacao/beecrowd/torneios/VI Ed. Comunas/A/A.csproj]
 Case 1:
 Pre.: 5 2 7
 In..: 2 5 7
