@@ -21,7 +21,11 @@ for (int i = 0; i < n; i++)
     somaLinhas[sum].Add(i);
 }
 
-int[] soma = somaLinhas.Keys.ToArray();
+int[] soma = new int[]
+{
+    somaLinhas.Keys.ElementAt(0),
+    somaLinhas.Keys.ElementAt(1)
+};
 int indiceErrado = 0;
 int somaQuadro = 0;
 
@@ -39,10 +43,8 @@ for (int j = 0; j < n; j++)
 {
     int sum = 0;
     int i = 0;
-    for (i = 0; i < n; i++)
-    {
-        sum += quadrado[i][j];
-    }
+    for (i = 0; i < n; i++) sum += quadrado[i][j];
+    
     if (somaQuadro != sum)
     {
         int numerTrocado = quadrado[indiceErrado][j];
