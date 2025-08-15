@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "alan1tavares",
+  "classifications": [ "Common", "Console" ],
+  "identity": "Template.ConsoleHackerRanck",
+  "name": "Template for hackeranck problems",
+  "shortName": "console-hackerranck",
+  "sourceName":"console-hackerranck",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
